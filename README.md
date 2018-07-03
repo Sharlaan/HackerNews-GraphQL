@@ -7,6 +7,7 @@
 This project is a fullstack boilerplate featuring :
 
 - Typescript everywhere !
+- Material Design everywhere ! (Material-UI & Vuetify for resp. React & Vue)
 - 2 clients flavors : React or Vue
 - 2 native client flavors : React-Native or (TBDforVue)
 - a graphql-based server featuring a Prisma ORM
@@ -15,7 +16,9 @@ This project is a fullstack boilerplate featuring :
 ## Installation
 
 Install [NodeJS](nodejs.org), and Docker.
-... then `npm i`
+... then install everything once with `npm i`
+
+Yarn will centralize all dependencies in the monorepo root, while lerna will expose in each repo the needed binaries (like `npx tsc`).
 
 ## Usage
 
@@ -25,6 +28,8 @@ This monorepo is managed with Lerna scripts :
 - global testing (e2e + unit) with `yarn test`
 - global build with `yarn build`
 - global start with `yarn start` + project configurator the first run
+
+For Lerna usage, check `npx lerna --help`
 
 ## Auto-configurator
 
@@ -49,7 +54,7 @@ At first run, a terminal prompt will ask you for :
 ### Server
 
 - [x] Add Nodemon
-- [x] Review Authentication / Authorization process
+- [x] Review [Authentication / Authorization process](https://www.prisma.io/docs/reference/upgrade-guides/graphcool-to-prisma/authentication-and-authorization-yaeco6ieth)
 - [x] Disable Introspection in production
 - [x] Add unit tests
 - [x] Add configurable Database
