@@ -1,0 +1,24 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# expo
+.expo/
+
+# Dependencies
+node_modules
+
+# Testing
+coverage
+
+# Production
+build
+dist
+.cache
+
+# Misc.
+.DS_Store
+.env.*
+*.log*
+
+# IDE
+.idea
+.vscode
